@@ -15,7 +15,7 @@
 				<li>Terminal</li>
 				<li>Homebrew</li>
 				<li>git</li>
-				<li>node</li>
+				<li>Node</li>
 				<li>npm</li>
 			</ul>
 			<p>
@@ -50,12 +50,12 @@
 			<p>We also went over a few UNIX commands:</p>
 			<ul>
 				<li>
-					<code>ls</code> <strong>l</strong>ists the directories and files in
-					the working directory. It takes some options, which you indicate by
-					adding a space, a dash and some letters. <code>ls</code> takes a bunch
-					of options including <code>a</code> and <code>l</code>.
-					<code>ls -a</code> indicates that we want to list directories
-					<strong>including</strong> hidden directories.
+					<code>ls</code> <strong>l</strong>i<strong>s</strong>ts the
+					directories and files in the working directory. It takes some options,
+					which you indicate by adding a space, a dash and some letters.
+					<code>ls</code> takes a bunch of options including <code>a</code> and
+					<code>l</code>. <code>ls -a</code> indicates that we want to list
+					directories <strong>including</strong> hidden directories.
 					<code>ls -l</code> indicates that we want to list all directories in a
 					formatted table with some extra information. We also combined these
 					two options! You can combine any options together:
@@ -81,9 +81,19 @@
 					<strong>relative</strong> path. An absolute path starts with the root
 					of your whole file system, <strong>/</strong>. A relative path starts
 					with the name of a folder in the current working directory.
-					<strong>~</strong> is short for an asbolute path to your home folder.
+					<strong>~</strong> is short for an absolute path to your home folder.
 				</li>
 			</ul>
+			<div class="resources">
+				<h3>Additional Resources</h3>
+				<ul>
+					<li>
+						<a href="https://files.fosswire.com/2007/08/fwunixref.pdf">
+							UNIX command cheat sheet
+						</a>
+					</li>
+				</ul>
+			</div>
 			<h2>Homebrew</h2>
 			<h3>What is it?</h3>
 			<p>
@@ -101,7 +111,7 @@
 			<p>
 				We used brew cask to install Visual Studio Code, our code editor:
 				<code>brew cask install visual-studio-code</code>. We also installed
-				node and it's package manager, npm: <code>brew install node</code>.
+				Node and it's package manager, npm: <code>brew install node</code>.
 			</p>
 			<p>
 				We talked about verifying that a command line tool had been installed by
@@ -131,14 +141,34 @@
 				all untracked or unstaged code to staging so that we can review it and
 				commit it. We checked <code>git status</code> again to make sure that
 				the files in stage were the files we wanted to commit and then we
-				commited them with <code>git commit -m</code> followed by a short
+				committed them with <code>git commit -m</code> followed by a short
 				message describing what is in the commit we were making.
 			</p>
+			<div class="resources">
+				<h3>Additional Resources</h3>
+				<ul>
+					<li>
+						<a href="https://brew.sh/">Homebrew website </a>
+					</li>
+					<li>
+						<a href="https://docs.brew.sh/">
+							official documentation
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://medium.com/danielpadua/using-homebrew-for-macos-aa34b2e0c90c"
+						>
+							Medium article detailing setup and basic usage
+						</a>
+					</li>
+				</ul>
+			</div>
 			<h2>Node</h2>
 			<h3>What is it?</h3>
 			<p>
 				We didn't talk too much about Node and what it is. It is a JavaScript
-				runetime build on Chrome's "V8" JavaScript engine. What that means
+				runtime build on Chrome's "V8" JavaScript engine. What that means
 				exactly will become clearer later on as you start writing more
 				JavaScript.
 			</p>
@@ -179,6 +209,21 @@
 				make development easier, but won't be used when we deploy code to
 				production.
 			</p>
+			<div class="resources">
+				<h3>Additional Resources</h3>
+				<ul>
+					<li>
+						<a href="https://www.npmjs.com/">
+							homepage (use the search bar to find package)
+						</a>
+					</li>
+					<li>
+						<a href="https://www.npmjs.com/package/live-server">
+							live-server package page
+						</a>
+					</li>
+				</ul>
+			</div>
 		</main>
 	</body>
 </html>
