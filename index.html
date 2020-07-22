@@ -4,4 +4,109 @@
 		<title>A simple development environment</title>
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
+	<body>
+		<main>
+			<h1>Overview</h1>
+			<p>
+				When we talked on Tuesday, we went over a variety of badass things. We
+				talked about some tools a developer uses:
+			</p>
+			<ul>
+				<li>Terminal</li>
+				<li>Homebrew</li>
+				<li>git</li>
+				<li>node</li>
+				<li>npm</li>
+			</ul>
+			<p>
+				We talked about GitHub, which you just used to install this website. We
+				also talked about <code>live-server</code> which is a development
+				dependency that makes developing websites easier.
+			</p>
+			<h1>Tools</h1>
+			<p>
+				Let's review the tools!
+			</p>
+			<h2>Terminal</h2>
+			<h3>What is it?</h3>
+			<p>
+				Terminal is a macOS program that lets you interact with the computer via
+				text commands. Because macOS and Linux are related to UNIX, an operating
+				system from the past times, the stuff Terminal runs is sometimes called
+				UNIX or *NIX (as in UNIX/Linux). Googling "opening a directory UNIX"
+				will give you a lot of Terminal related results.
+			</p>
+			<p>
+				We talked about <code>man</code> pages and <code>--help</code>. These
+				are common UNIX ways of getting more information about a command line
+				program. You could type <code>man git</code>, or
+				<code>git --help</code> to see its <code>man</code> page.
+			</p>
+			<h3>How did we use it?</h3>
+			<p>
+				We used Terminal to install Homebrew. We used Homebrew in Terminal to
+				install various things, more on that later.
+			</p>
+			<p>We also went over a few UNIX commands:</p>
+			<ul>
+				<li>
+					<code>ls</code> <strong>l</strong>ists the directories and files in
+					the working directory. It takes some options, which you indicate by
+					adding a space, a dash and some letters. <code>ls</code> takes a bunch
+					of options including <code>a</code> and <code>l</code>.
+					<code>ls -a</code> indicates that we want to list directories
+					<strong>including</strong> hidden directories.
+					<code>ls -l</code> indicates that we want to list all directories in a
+					formatted table with some extra information. We also combined these
+					two options! You can combine any options together:
+					<code>ls -la</code> or <code>ls -al</code>. We also used an argument
+					to look inside a specific folder. If you follow <code>ls</code> with
+					at directory name, you will list the files and directories in that
+					directory. <code>ls ~/GitHub</code> should list the files and
+					directories in your new GitHub folder.
+				</li>
+				<li>
+					<code>pwd</code> shows the <strong>p</strong>ath to
+					<strong>w</strong>orking <strong>d</strong>irectory. Type
+					<code>pwd</code> to find out where in your computer you are!
+				</li>
+				<li>
+					<code>cd</code> <strong>c</strong>hanges the working
+					<strong>d</strong>irectory. <code>cd</code> is followed by the name of
+					the directory you want to enter. I've been sort of implying something
+					in the README and in the <code>ls</code> command above with all this
+					<code>~</code> talk. When a command takes a file or directory as an
+					argument, you can usually refer to it in one of two ways. With an
+					<strong>absolute</strong> path, or with a
+					<strong>relative</strong> path. An absolute path starts with the root
+					of your whole file system, <strong>/</strong>. A relative path starts
+					with the name of a folder in the current working directory.
+					<strong>~</strong> is short for an asbolute path to your home folder.
+				</li>
+			</ul>
+			<h2>Homebrew</h2>
+			<h3>What is it?</h3>
+			<p>
+				Homebrew is a package manager. It downloads, stores and updates packages
+				for you. It makes is easy to download all the stuff you would need as a
+				developer.
+			</p>
+			<h3>How did we use it?</h3>
+			<p>
+				If you are installing a console program, you can type
+				<code>brew install</code> and then the name of the program. If you are
+				installing a program that has a GUI, you need to use brew cask:
+				<code>brew install</code> and then then name of the program.
+			</p>
+			<p>
+				We used brew cask to install Visual Studio Code, our code editor:
+				<code>brew cask install visual-studio-code</code>. We also installed
+				node and it's package manager, npm: <code>brew install node</code>.
+			</p>
+			<p>
+				We talked about verifying that a command line tool had been installed by
+				entering <code>which</code> followed by the name of the program.
+			</p>
+		</main>
+	</body>
 </html>

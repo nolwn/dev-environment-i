@@ -19,5 +19,8 @@
     "css"
   ],
   "author": "Nolan Hellyer",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
 }

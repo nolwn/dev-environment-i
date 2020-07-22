@@ -10,13 +10,35 @@ Now open your terminal. Navigate to your GitHub folder:
 
 `cd ~/GitHub`
 
-Now paste the contents of your clipboard into the terminal. It should say something like `git clone https://github.com/nolwn/dev-environment-i`. Actually... that's _exactly_ what it should say! Press `Return`.
+Now paste the contents of your clipboard into the terminal. It should say something like:
 
-If you type `ls` you should now see a new directory called `dev-environment-i`. Type `cd dev-environment-i` and you will enter the directory. If you type `ls -la` it will list the files and folders in the directory. They should match what you see on this GitHub page.
+`git clone https://github.com/nolwn/dev-environment-i`.
 
-Type `npm install`. We didn't talk about what would happen if you typed `npm install` without naming a package, but I'll tell you what it does now: it installs all the dependencies and devDependencies in the current directories `package.json`. Everything I decided to install for this npm package will be installed now on your computer.
+Actually... that's _exactly_ what it should say! Press `Return`.
 
-Now that you have the repo, and you have installed it's dependencies, you can run it's start script: `npm run start`.
+If you type `ls` you should now see a new directory called `dev-environment-i`. Type:
+
+`cd dev-environment-i`
+
+and you will enter the directory. If you type
+
+`ls -la`
+
+it will list the files and folders in the directory. They should match what you see on this GitHub page.
+
+Type
+
+`npm install`
+
+We didn't talk about what would happen if you typed
+
+`npm install`
+
+without naming a package, but I'll tell you what it does now: it installs all the dependencies and devDependencies in the current directories `package.json`. Everything I decided to install for this npm package will be installed now on your computer.
+
+Now that you have the repo, and you have installed it's dependencies, you can run it's start script:
+
+`npm run start`
 
 Boom!
 

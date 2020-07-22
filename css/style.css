@@ -1,0 +1,17 @@
+body {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	line-height: 1.65rem;
+}
+
+code {
+	background-color: darkslategrey;
+	padding: 0.15rem 0.5rem;
+	border-radius: 0.25rem;
+	color: white;
+	white-space: nowrap;
+}
+
+main {
+	margin: auto;
+	width: 35rem;
+}
