@@ -107,6 +107,78 @@
 				We talked about verifying that a command line tool had been installed by
 				entering <code>which</code> followed by the name of the program.
 			</p>
+			<h2>git</h2>
+			<h3>What is it?</h3>
+			<p>
+				git is helpful for tracking changes made by you and others in a project
+				and it has all kind of handy functions for returning to old states of
+				work and creating branches so that you can work on something without
+				interfering with the rest of the code base.
+			</p>
+			<h3>How did we use it?</h3>
+			<p>
+				We initialized a git repository with <code>git init</code>. We made some
+				changes to our code and then, when we were ready to commit those changes
+				to the repository, We used git status to see which files we wanted to
+				commit. When we saw that node_modules was being considered "untracked"
+				by git, we created and then added them to our .gitignore file so that
+				git would not commit them or add them to staging.
+			</p>
+			<p>
+				We staged our changes with
+				<code>git add -A</code>. Notice the -A here, which is really similar to
+				the -l, -a, or -la options that we gave to ls. In this case A means, add
+				all untracked or unstaged code to staging so that we can review it and
+				commit it. We checked <code>git status</code> again to make sure that
+				the files in stage were the files we wanted to commit and then we
+				commited them with <code>git commit -m</code> followed by a short
+				message describing what is in the commit we were making.
+			</p>
+			<h2>Node</h2>
+			<h3>What is it?</h3>
+			<p>
+				We didn't talk too much about Node and what it is. It is a JavaScript
+				runetime build on Chrome's "V8" JavaScript engine. What that means
+				exactly will become clearer later on as you start writing more
+				JavaScript.
+			</p>
+			<h2>npm</h2>
+			<h3>What is it?</h3>
+			<p>
+				Like Homebrew, npm is a package manager. It stands for
+				<strong>N</strong>ode <strong>P</strong>ackage <strong>M</strong>anager.
+				npm is responsible for downloading dependencies for you projects, and
+				maintaining your package.json file. Ultimately, it can be used to
+				publish projects that you work on in the npm repository for others to
+				download and use.
+			</p>
+			<h3>How did we use it?</h3>
+			<p>
+				We use <code>npm init</code> to start a new Node project. We were taken
+				through a few prompts that had us set up things like the name of the
+				project, the author, and the kind of license it should use. When we were
+				done, we had a new package.json file.
+			</p>
+			<p>
+				We also used npm to install a development dependency, live-server. We
+				did this with the command <code>npm install -D live-server</code>. This
+				useful utility creates a server on your computer that automatically
+				detects changes to files on your project and reloads itself so you can
+				always see the latest version of what you are working on.
+			</p>
+			<p>
+				We do not have direct access to live-server, however, so we added a
+				script called "start" to our package.json and told npm that we wanted it
+				to use live-server on our project directory when we ran that start
+				script. We ran that script with <code>npm run start</code> and verified
+				that it worked.
+			</p>
+			<p>
+				We also saw that our package.json was keeping track of this dependency
+				under a section called "devDependencies", which is for dependencies that
+				make development easier, but won't be used when we deploy code to
+				production.
+			</p>
 		</main>
 	</body>
 </html>

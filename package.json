@@ -1,26 +1,27 @@
 {
-  "name": "dev-environment-i",
-  "version": "1.0.0",
-  "description": "A little website describing a basic development environment.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "github.com/nolwn/dev-environment-i"
-  },
-  "keywords": [
-    "jake",
-    "spalding",
-    "dev",
-    "environment",
-    "html",
-    "css"
-  ],
-  "author": "Nolan Hellyer",
-  "license": "ISC",
-  "devDependencies": {
-    "live-server": "^1.2.1"
-  }
+	"name": "dev-environment-i",
+	"version": "1.0.0",
+	"description": "A little website describing a basic development environment.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "live-server ."
+	},
+	"repository": {
+		"type": "git",
+		"url": "github.com/nolwn/dev-environment-i"
+	},
+	"keywords": [
+		"jake",
+		"spalding",
+		"dev",
+		"environment",
+		"html",
+		"css"
+	],
+	"author": "Nolan Hellyer",
+	"license": "ISC",
+	"devDependencies": {
+		"live-server": "^1.2.1"
+	}
 }
