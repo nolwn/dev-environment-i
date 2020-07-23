@@ -2,6 +2,8 @@
 
 First, you need to clone this repository onto your computer. Click "Code" and then click that little clipboard icon. That pops the link to this repository into your clipboard.
 
+![Get the repo into your clipboard](img/github-clipboard.png)
+
 Now open your terminal. Navigate to your GitHub folder:
 
 `cd ~/GitHub`
