@@ -5,8 +5,37 @@
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
+		<nav id="top">
+			<ul>
+				<li>
+					<a href="#overview">
+						Overview
+					</a>
+				</li>
+				<li>
+					<a href="#tools">
+						Tools
+					</a>
+					<ul>
+						<li><a href="#terminal">terminal</a></li>
+						<li><a href="#homebrew">homebrew</a></li>
+						<li><a href="#git">git</a></li>
+						<li><a href="#node">node</a></li>
+						<li><a href="#npm">npm</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#websites">Websites</a>
+					<ul>
+						<li><a href="#mdn">MDN</a></li>
+						<li><a href="#github">GitHub</a></li>
+					</ul>
+				</li>
+				<li><a href="#altdobe">Altdobe</a></li>
+			</ul>
+		</nav>
 		<main>
-			<h1>Overview</h1>
+			<h1 id="overview">Overview</h1>
 			<p>
 				When we talked on Tuesday, we went over a variety of badass things. We
 				talked about some tools a developer uses:
@@ -21,20 +50,22 @@
 			<p>
 				We talked about GitHub, which you just used to install this website. We
 				also talked about <code>live-server</code> which is a development
-				dependency that makes developing websites easier.
+				dependency that makes developing websites easier. We talked about git
+				and you made your first git repo and first git commit.
 			</p>
-			<h1>Tools</h1>
-			<p>
-				Let's review the tools!
-			</p>
-			<h2>Terminal</h2>
+			<h1 id="tools">Tools</h1>
+			<h2 id="terminal">Terminal</h2>
+			<img src="img/terminal.png" />
 			<h3>What is it?</h3>
 			<p>
 				Terminal is a macOS program that lets you interact with the computer via
 				text commands. Because macOS and Linux are related to UNIX, an operating
 				system from the past times, the stuff Terminal runs is sometimes called
-				UNIX or *NIX (as in UNIX/Linux). Googling "opening a directory UNIX"
-				will give you a lot of Terminal related results.
+				UNIX or *NIX (as in UNIX/Linux). Googling for instance "opening a
+				directory UNIX" will give you a lot of Terminal related results. It's
+				also important to know that, while Linux is different from macOS in many
+				ways, lots of times tools and commands that you find that are for Linux,
+				will also work in macOS.
 			</p>
 			<p>
 				We talked about <code>man</code> pages and <code>--help</code>. These
@@ -92,9 +123,15 @@
 							UNIX command cheat sheet
 						</a>
 					</li>
+					<li>
+						<a href="https://www.youtube.com/watch?v=-rPPqm44xLs">
+							YouTube video with some great UNIX History
+						</a>
+					</li>
 				</ul>
 			</div>
-			<h2>Homebrew</h2>
+			<h2 id="homebrew">Homebrew</h2>
+			<img src="img/Homebrew.svg" />
 			<h3>What is it?</h3>
 			<p>
 				Homebrew is a package manager. It downloads, stores and updates packages
@@ -117,7 +154,28 @@
 				We talked about verifying that a command line tool had been installed by
 				entering <code>which</code> followed by the name of the program.
 			</p>
-			<h2>git</h2>
+			<div class="resources">
+				<h3>Additional Resources</h3>
+				<ul>
+					<li>
+						<a href="https://brew.sh/">Homebrew website </a>
+					</li>
+					<li>
+						<a href="https://docs.brew.sh/">
+							official documentation
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://medium.com/danielpadua/using-homebrew-for-macos-aa34b2e0c90c"
+						>
+							Medium article detailing setup and basic usage
+						</a>
+					</li>
+				</ul>
+			</div>
+			<h2 id="git">git</h2>
+			<img src="img/git.png" />
 			<h3>What is it?</h3>
 			<p>
 				git is helpful for tracking changes made by you and others in a project
@@ -148,23 +206,26 @@
 				<h3>Additional Resources</h3>
 				<ul>
 					<li>
-						<a href="https://brew.sh/">Homebrew website </a>
-					</li>
-					<li>
-						<a href="https://docs.brew.sh/">
-							official documentation
+						<a href="https://git-scm.com/docs">
+							git reference
 						</a>
 					</li>
 					<li>
 						<a
-							href="https://medium.com/danielpadua/using-homebrew-for-macos-aa34b2e0c90c"
+							href="https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet"
 						>
-							Medium article detailing setup and basic usage
+							git cheat sheet
+						</a>
+					</li>
+					<li>
+						<a href="https://learngitbranching.js.org/?locale=en_US">
+							Learn git branching
 						</a>
 					</li>
 				</ul>
 			</div>
-			<h2>Node</h2>
+			<h2 id="node">Node</h2>
+			<img src="img/node.png" />
 			<h3>What is it?</h3>
 			<p>
 				We didn't talk too much about Node and what it is. It is a JavaScript
@@ -172,7 +233,8 @@
 				exactly will become clearer later on as you start writing more
 				JavaScript.
 			</p>
-			<h2>npm</h2>
+			<h2 id="npm">npm</h2>
+			<img src="img/npm.png" />
 			<h3>What is it?</h3>
 			<p>
 				Like Homebrew, npm is a package manager. It stands for
@@ -224,6 +286,102 @@
 					</li>
 				</ul>
 			</div>
+			<h1 id="websites">Websites</h1>
+			<h2 id="mdn">MDN</h2>
+			<img src="img/mdn.png" />
+			<p>
+				MDN is an authoritative reference for HTML, CSS and JavaScript in the
+				browser. Sites like W3 School have information but it isn't always
+				accurate. Plus, Mozilla is just a great organization!
+			</p>
+			<p>
+				You can use the site to look up things like what a tag or css property
+				is. They also have great tutorials you can follow that will give you a
+				good sense of different technologies. Their
+				<a href="https://developer.mozilla.org/en-US/docs/Learn">
+					web development tutorials </a
+				>w have a lot of great information for learning about what being a web
+				dev entails.
+			</p>
+			<h2 id="github">GitHub</h2>
+			<img src="img/Octocat.png" />
+			<p>
+				Have a git repository on your computer is great, but if you want to work
+				with other developers, you have to be able to share it with them. GitHub
+				lets you host remote repositories that are accessible to others.
+			</p>
+			<p>
+				It's important to remember, as you make changes to your local
+				repository, that you need to push to GitHub with <code>git push</code>.
+			</p>
+			<p>
+				Their bizarre mascot is called "Octocat" and, presumably, is what
+				happens when a cat and an octopus decide to get freaky.
+			</p>
+			<h1 id="altdobe">Altdobe</h1>
+			<p>
+				When I was first learning web development, I got a real kick out of the
+				design part of it. I ended up wanting something like the Adobe Creative
+				Suite, but there was no way on this earth I was going to pay a huge
+				monthly fee for some software I was going to use casually once and
+				awhile.
+			</p>
+			<p>
+				After some research I discovered that while Photoshop and Illustrator
+				might be the industry standard, but there are solid alternatives, both
+				free and not. If doing some visual design is interesting to you, these
+				might be helpful.
+			</p>
+			<h2 id="foss-altdobe">Free and Open Source</h2>
+			<h3>GIMP</h3>
+			<img src="img/gimp.png" />
+			<p>
+				GIMP comes preinstalled on many Linux distros, and it's a standard for
+				editing photos in the Free and Open Source ("FOSS") community. I've
+				found it's interface to be decent, and it's powerful enough for most of
+				your photo and pixel editing needs. This is the FOSS answer to
+				Photoshop.
+			</p>
+			<h3>Inkscape</h3>
+			<img src="img/inkscape.png" />
+			<p>
+				Like GIMP, Inkscape is the standard in the FOSS community for making
+				illustrations. It's a FOSS alternative to Illustrator. I personally find
+				its interface annoying and I don't like it. Maybe given time, I would
+				come around, though. And it is free!
+			</p>
+			<h2 src="paid-altdobe">Less expensive, less evil, but not free</h2>
+			<h3>Affinity Designer and Affinity Photo</h3>
+			<img src="img/affinity.svg" />
+			<p>
+				Affinity Designer and Affinity Photo are pretty new pieces of design
+				software. I've been using them since they were in beta, and they've come
+				a long way. They have most of the power of Adobe products, but they are
+				about $50 each. I love them, and if you feel like Inkscape and GIMP
+				aren't cutting it, these are definitely worth a look.
+			</p>
+			<p>
+				Likely Designer is all you would need. It has some pixel/photo editing
+				abilities, but is mostly competing with Illustrator. If you find you
+				want to do more powerful photo editing, though, Affinity Photo is great.
+			</p>
+			<h3>Sketch</h3>
+			<img src="img/sketch.png" />
+			<p>
+				Sketch is a macOS app that is really big in the UI/UX design community.
+				It's roughly like Illustrator but geared toward building UI/UX elements.
+				I have never used it, but I've heard good things about it, and it's a
+				well regarded program.
+			</p>
 		</main>
+		<footer>
+			<p>
+				<a href="#overview">Back to top</a> |
+				<a href="https://github.com/nolwn/dev-environment-i">
+					Want to make some adjustments? Visit the repo!
+				</a>
+			</p>
+			<p>Made with ❤ by Nolan Hellyer</p>
+		</footer>
 	</body>
 </html>
